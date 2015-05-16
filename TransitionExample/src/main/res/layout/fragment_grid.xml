@@ -4,21 +4,28 @@
     android:layout_height="match_parent"
     tools:context="it.moondroid.zoomfragmentanimation.GridFragment">
 
-    <TextView
-        android:id="@+id/item1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="item1"
-        android:gravity="center"
-        android:background="@android:color/darker_gray" />
+    <FrameLayout
+        android:id="@+id/item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="item1" />
+    </FrameLayout>
+
 
     <TextView
         android:id="@+id/item2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="item2"
-        android:gravity="center"
         android:layout_centerInParent="true"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="item2" />
 
 </RelativeLayout>
