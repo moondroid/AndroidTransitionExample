@@ -8,11 +8,15 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.bignerdranch.android.transitionexample.TransitionActivity"
+            android:name=".TransitionActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".ZoomTransitionActivity"
+            android:label="@string/title_activity_zoom_transition" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
